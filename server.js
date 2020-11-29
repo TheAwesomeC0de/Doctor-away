@@ -25,7 +25,7 @@ var logged_in = []
 var onduty = []
 var runninglist = []
 
-var port = 3000
+var port = process.env.PORT||3000
 
 
 
