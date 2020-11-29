@@ -96,6 +96,8 @@ app.get("/seeknamedoc", function (req, res) {
   var index = doctordb.findname(req.ip, onduty)
   if (index === false) {
     res.send("Not logged in")
+    console.log(onduty)
+    console.log(req.ip)
   }
   else {
     res.send("Hello " + onduty[index].name)
