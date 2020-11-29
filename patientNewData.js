@@ -9,7 +9,7 @@ if (showname == null) {
     var request = new XMLHttpRequest()
     request.open('GET', url)
     request.onload = () => {
-        respd = request1.response;
+        respd = request.response;
         shownamed.innerHTML = respd
     }
     request.send()
