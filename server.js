@@ -305,6 +305,7 @@ app.get("/seekname", function (req, res) {
   else {
     res.send("Hello " + name.name)
     console.log(name.name)
+    console.log(req.ip)
   }
 })
 
