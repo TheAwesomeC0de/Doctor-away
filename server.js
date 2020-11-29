@@ -102,6 +102,7 @@ app.get("/seeknamedoc", function (req, res) {
   else {
     res.send("Hello " + onduty[index].name)
     console.log(onduty[index].name)
+    console.log(req.ip)
   }
 })
 
@@ -301,6 +302,7 @@ app.get("/seekname", function (req, res) {
   var name = pdb.findname(req.ip, logged_in)
   if (name === false) {
     res.send("Not logged in")
+    console.log(req.ip)
   }
   else {
     res.send("Hello " + name.name)
