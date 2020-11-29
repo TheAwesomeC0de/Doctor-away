@@ -238,12 +238,26 @@ app.post("/Appointment_request", function (req, res) {
       var mailOptions = {
         from: 'onlinedctr@gmail.com',
         to: found.email,
-        subject: 'Sending Email using Node.js',
-        html: ("<html><body>name=" + runninglist[select].details.Fname +
-          " " + runninglist[select].details.Lname + " <br>qualifications : "
-          + runninglist[select].details.degree + "<br>link :"
-          + runninglist[select].link + " <br>time :" +
-          tim.setTime(runninglist[select].time) + "</body></html>"
+        subject: 'The Online Doctor',
+        html: ('<html lang="en">'+
+        '<head>'+
+            '<meta charset="UTF-8">'+
+            '<meta name="viewport" content="width=device-width, initial-scale=1.0">'+
+            '<title>page 2</title>'+
+            "<style>                @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');     body{ background-image: url(https://ak.picdn.net/shutterstock/videos/30574603/thumb/1.jpg);}  .page1{ text-align: center;                    color: black; font-family: 'Raleway', sans-serif; padding-top: 175; font-size: x-large; } h1{ text-align: center; color: rgb(12, 139, 182); font-family: 'Raleway', sans-serif; padding-top: 10;}</style>"+
+            '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">'+
+        '</head>'+
+        '<body>'+
+            '<h1 >Confirmed Appointment</h1>'+
+            '<div class="page1">'+
+                "name=" + runninglist[select].details.Fname +
+                " " + runninglist[select].details.Lname + " <br>qualifications : "
+                + runninglist[select].details.degree + "<br>link :"
+                + runninglist[select].link + " <br>time :" +
+                tim.setTime(runninglist[select].time) + 
+            '</div>'+
+        '</body>'+
+        '</html>'
         )
       };
       mail.send(mailOptions)
@@ -252,11 +266,25 @@ app.post("/Appointment_request", function (req, res) {
       var mailOptions = {
         from: 'onlinedctr@gmail.com',
         to: runninglist[select].details.email,
-        subject: 'Sending Email using Node.js',
-        html: ("<html><body>name=" + temp.details.fname + " " + temp.details.lname + " <br>Age:"
-          + temp.details.age + " <br>Chronic Disease: " + temp.details.chr_disease +
-          " <br>Allergy: " + temp.details.allergy + "<br>Problem:  " +
-          temp.details.problem + "<br>Date and Time: " + temp.time + "<br></body></html>"
+        subject: 'You have a scheduled appointent',
+        html: (" <html lang='en'>"+ 
+            "<head>"+
+            "<meta charset='UTF-8'>"+
+            "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"+
+            "<title>page1</title>"+
+            "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>"+
+            "<style>                @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');     body{ background-image: url(https://ak.picdn.net/shutterstock/videos/30574603/thumb/1.jpg);}  .page1{ text-align: center;                    color: black; font-family: 'Raleway', sans-serif; padding-top: 175; font-size: x-large; } h1{ text-align: center; color: rgb(12, 139, 182); font-family: 'Raleway', sans-serif; padding-top: 10;}</style>"+
+        "</head>"+
+        "<body>"+
+            "<h1>Online doctor appointment system.</h1>"+
+            '<div class="page1">'+
+                "name=" + temp.details.fname + " " + temp.details.lname + " <br>Age:"
+                + temp.details.age + " <br>Chronic Disease: " + temp.details.chr_disease +
+                " <br>Allergy: " + temp.details.allergy + "<br>Problem:  " +
+                temp.details.problem + "<br>Date and Time: " + temp.time + "<br>"+
+            "</div>"+
+        "</body>"+
+        "</html>"
         )
       };
       mail.send(mailOptions)

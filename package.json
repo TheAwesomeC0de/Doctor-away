@@ -1,7 +1,7 @@
 {
-  "name": "website-pages",
-  "version": "1.0.0",
-  "description": "",
+  "name": "doctor-away",
+  "version": "1.1.0",
+  "description": "Online doctor appointment system",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -16,16 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/themightybansal/Doctor-Doctor.git"
+    "url": "git+https://github.com/Themightybansal/Doctor-away.git"
   },
   "keywords": [
-    "Doctor",
-    "Away"
+    "Node",
+    "Server"
   ],
-  "author": "Rishabh",
+  "author": "Rishabh Bansal",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/themightybansal/Doctor-Doctor/issues"
+    "url": "https://github.com/Themightybansal/Doctor-away/issues"
   },
-  "homepage": "https://github.com/themightybansal/Doctor-Doctor#readme"
+  "homepage": "https://github.com/Themightybansal/Doctor-away#readme"
 }
