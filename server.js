@@ -244,7 +244,6 @@ app.post("/Appointment_request", function (req, res) {
             '<meta charset="UTF-8">'+
             '<meta name="viewport" content="width=device-width, initial-scale=1.0">'+
             '<title>page 2</title>'+
-            "<style>                @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');     body{ background-image: url(https://ak.picdn.net/shutterstock/videos/30574603/thumb/1.jpg);}  .page1{ text-align: center;                    color: black; font-family: 'Raleway', sans-serif; padding-top: 175; font-size: x-large; } h1{ text-align: center; color: rgb(12, 139, 182); font-family: 'Raleway', sans-serif; padding-top: 10;}</style>"+
             '<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">'+
         '</head>'+
         '<body>'+
@@ -273,8 +272,7 @@ app.post("/Appointment_request", function (req, res) {
             "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"+
             "<title>page1</title>"+
             "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>"+
-            "<style>                @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');     body{ background-image: url(https://ak.picdn.net/shutterstock/videos/30574603/thumb/1.jpg);}  .page1{ text-align: center;                    color: black; font-family: 'Raleway', sans-serif; padding-top: 175; font-size: x-large; } h1{ text-align: center; color: rgb(12, 139, 182); font-family: 'Raleway', sans-serif; padding-top: 10;}</style>"+
-        "</head>"+
+             "</head>"+
         "<body>"+
             "<h1>Online doctor appointment system.</h1>"+
             '<div class="page1">'+
