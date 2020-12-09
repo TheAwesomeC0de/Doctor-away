@@ -8,7 +8,7 @@ class mail {
             service: 'gmail',
             auth: {
                 user: 'onlinedctr@gmail.com',
-                pass: "ishakira@2"
+                pass: "PLACEHOLDER"
             }
         });
     }
